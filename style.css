@@ -26,7 +26,16 @@ body{
   font-weight: 500;
   letter-spacing: 0.05em;
 }
-
+.inputbtn{
+  border: none;
+  border-radius: 15px;
+  transition: 0.2s ease-in-out;
+}
+.inputbtn:hover{
+  cursor: pointer;
+  background: rgb(50, 121, 191);
+  color: #fff;
+}
 .input-class {
   width: 100%;
   margin-bottom: 14px;
@@ -35,8 +44,12 @@ body{
   font-size: 28px;
   font-weight: 500;
   box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
 }
-
+.input-class:focus{
+  border: none;
+}
 .inner-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -50,10 +63,11 @@ body{
   cursor: pointer;
   transition: background-color 0.2s ease;
   border: none;
+  border-radius: 15px;
 }
 
 .inner-container button:hover {
-  background: #d4a291;
+  background: #fed4c5;
 }
 
 .inner-container button:first-child {
